@@ -1,0 +1,352 @@
+/* ======================================================================================================= */
+/* =================================ABOUT API SECTION===================================================== */
+/* ======================================================================================================= */
+
+.about-api-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  color: var(--dark-color);
+  background-color: var(--dark-color);
+  border-radius: 9px;
+  font-size: 1.4rem;
+
+  padding: 6rem 3rem 4rem 3rem;
+  position: relative;
+}
+
+.api-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: first baseline;
+}
+
+.secondary-heading {
+  color: white;
+  position: absolute;
+
+  left: 2rem;
+  top: 2rem;
+  padding: 0.3rem 1.2rem;
+  border-radius: 9px;
+  font-size: 1.2rem;
+
+  font-weight: 700;
+}
+
+.light-heading {
+  background-color: rgba(124, 250, 230, 0.5);
+}
+
+.middle-color-heading {
+  background-color: rgba(5, 201, 192, 0.5);
+}
+
+.dark-heading {
+  background-color: rgba(20, 52, 97, 0.5);
+}
+
+.main-text,
+.api-text {
+  font-weight: 500;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.api-text {
+  text-align: center;
+}
+
+.api-text > code {
+  background-color: rgba(124, 250, 230, 0.5);
+  color: var(--dark-color);
+  padding: 0.5rem;
+  border-radius: 9px;
+  border: 1px solid var(--extra-light-color);
+}
+
+.endpoint {
+  flex: 1;
+  font-weight: 400;
+  background-color: var(--extra-light-color);
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+.http-method {
+  flex: 1;
+  font-weight: 600;
+  background-color: var(--light-color);
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+.description {
+  flex: 8;
+  color: white;
+
+  padding: 0.5rem;
+  border-radius: 3px;
+  font-weight: 200;
+  line-height: 1.6;
+}
+
+.description > pre {
+  line-height: 1.1;
+  border-radius: 9px;
+  background-color: #ffffffb9;
+}
+
+.text-highlighter {
+  color: var(--middle-color);
+  font-weight: 500;
+}
+
+.success-json {
+  color: rgb(2, 165, 2);
+}
+
+.failure-json {
+  color: red;
+}
+
+@media screen and (max-width: 424px) {
+  .api-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+
+/* ======================================================================================================= */
+/* ==============================FEATURE SELECTION SECTION================================================ */
+/* ======================================================================================================= */
+
+.feature-selection-section {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+
+  padding: 6rem 3rem 4rem 3rem;
+  position: relative;
+}
+
+.feature-selection-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 3rem;
+  border: 1px solid var(--dark-color);
+  border-radius: 9px;
+  width: 50rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.8rem;
+}
+
+.btn-container > button {
+  display: inline-block;
+  border: 1.5px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+
+  font-size: 1.6rem;
+  transform-origin: bottom;
+
+  transition: all 0.3s;
+}
+
+.btn-container > button[type="reset"] {
+  background-color: transparent;
+  color: var(--dark-color);
+}
+
+.btn-container > button[type="submit"] {
+  background-color: var(--middle-color);
+  color: #fff;
+}
+
+.btn-container > button[type="reset"]:hover {
+  border-bottom-color: var(--dark-color);
+}
+
+.btn-container > button[type="submit"]:hover {
+  background-color: var(--dark-color);
+}
+
+.btn-container > button[type="reset"]:active {
+  color: #fff;
+  background-color: black;
+}
+
+@media screen and (max-width: 416px) {
+  .feature-selection-form {
+    gap: 1.6rem;
+    padding: 2rem;
+
+    width: 40rem;
+  }
+}
+
+/* ======================================================================================================= */
+/* =========================================RESULT SECTION================================================ */
+/* ======================================================================================================= */
+
+.result-section {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 6rem 3rem 4rem 3rem;
+  position: relative;
+}
+
+.report {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  row-gap: 2rem;
+
+  width: 80rem;
+}
+
+.report-heading {
+  grid-area: 1 / span 2;
+  text-align: center;
+
+  color: var(--dark-color);
+  font-size: 2.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.report-param {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.report-value {
+  font-size: 1.6rem;
+}
+
+.brackets {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.brackets + ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  color: var(--middle-color);
+}
+
+.fitness {
+  display: inline;
+  background: var(--extra-light-color);
+  color: var(--dark-color);
+  border-radius: 3px;
+  padding: 0.5rem;
+  width: fit-content;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.selected-features {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.selected-features > li {
+  background: var(--dark-color);
+  color: #fff;
+  padding: 1rem;
+
+  width: fit-content;
+
+  border-radius: 9px;
+}
+
+.selected-features > li:nth-child(3n + 2) {
+  background: var(--middle-color);
+}
+
+.selected-features > li:nth-child(3n + 3) {
+  background: var(--light-color);
+}
+
+.selected-features-num {
+  display: inline-block;
+  width: fit-content;
+
+  padding: 1rem 2rem;
+  border-radius: 9px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+
+  background-color: rgb(2, 143, 44);
+}
+
+.report-table-wrapper {
+  grid-area: 7 / 1 / span 1 / span 2;
+  overflow-x: auto;
+}
+
+.report-table {
+  border: 3px solid var(--dark-color);
+  color: var(--dark-color);
+  font-size: 1.6rem;
+  min-width: 100%;
+
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.report-table > thead {
+  border: 1px solid var(--dark-color);
+  color: #fff;
+  background-color: var(--dark-color);
+}
+
+.report-table th,
+.report-table td {
+  padding: 0.5rem;
+}
+
+.report-table > tbody > tr:hover {
+  color: #fff;
+  background: var(--light-color);
+
+  cursor: pointer;
+}
+
+.report-table > tbody > tr > td:last-child {
+  color: #fff;
+  background: var(--light-color);
+}
+
+.report-table > tbody > tr > td {
+  border: 1px solid var(--light-color);
+}
+
+@media screen and (max-width: 424px) {
+  .selected-features > li {
+    font-size: 1.4rem;
+  }
+}

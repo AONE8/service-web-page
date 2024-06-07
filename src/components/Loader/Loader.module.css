@@ -1,0 +1,83 @@
+.loader {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  left: 50%;
+  top: 50%;
+  background: rgba(255, 255, 255, 0.9);
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 100;
+
+  transform: translate(-50%, -50%);
+  cursor: none;
+}
+
+.circle-container {
+  width: 15rem;
+  height: 10rem;
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+}
+
+.dark-circle {
+  background-color: var(--dark-color);
+  top: 0;
+  left: 0;
+
+  animation: circle 1s ease-in-out infinite;
+}
+
+.midcolor-circle {
+  background-color: var(--middle-color);
+  top: 0;
+  right: 0;
+
+  animation: circle 1s ease-in-out 0.25s infinite;
+}
+
+.light-circle {
+  background-color: var(--light-color);
+  bottom: 0;
+  left: 0;
+
+  animation: circle 1s ease-in-out 0.5s infinite;
+}
+
+.extra-light-circle {
+  background-color: var(--extra-light-color);
+  bottom: 0;
+  right: 0;
+
+  animation: circle 1s ease-in-out 0.75s infinite;
+}
+
+.text {
+  font-size: 1.6rem;
+}
+
+@keyframes circle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 388px) {
+}

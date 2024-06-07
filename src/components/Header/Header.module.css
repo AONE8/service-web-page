@@ -1,0 +1,23 @@
+.header {
+  grid-column: 1 / -1;
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 14rem;
+}
+
+.img-box > img {
+  height: 10rem;
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .img-box > img {
+    height: 8rem;
+  }
+}

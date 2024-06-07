@@ -1,0 +1,21 @@
+.footer {
+  background: var(--dark-color);
+  height: 7rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  color: #fff;
+
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.footer > img {
+  height: 5rem;
+
+  filter: grayscale();
+  opacity: 0.3;
+}

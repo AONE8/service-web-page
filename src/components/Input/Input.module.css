@@ -1,0 +1,49 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input-container > label {
+  display: inline-block;
+
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--dark-color);
+
+  background-color: #fff;
+
+  left: 2rem;
+  top: 1.05rem;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.input-container input,
+.input-container input:focus {
+  border: 1px solid var(--dark-color);
+  border-radius: 9px;
+
+  padding: 1rem 2rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 300;
+
+  outline: none;
+}
+
+.input-container input:focus {
+  border-color: var(--middle-color);
+}
+
+.input-container > input:focus + label {
+  color: var(--middle-color);
+}
+
+.input-container > input:focus + label,
+.input-container > input:not(:placeholder-shown) + label {
+  transform: translate(-2rem, -1.05rem) translateY(-50%) scale(0.8);
+  padding: 0 0.5rem;
+}
